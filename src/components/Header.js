@@ -11,7 +11,7 @@ function Header() {
     <Box display="flex" alignItems="center" height="100%">
       <img src="/images/logo.png" alt="Logo" height="100px" />
       <Box ml="auto">
-        <Link href="https://twitter.com/your_twitter_account"
+        <Link href="https://twitter.com/K7943914490636"
         textDecoration="none">
           <Box 
           display="flex" 
