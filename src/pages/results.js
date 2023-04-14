@@ -32,7 +32,7 @@ const ResultsPage = () => {
       <Header />
       <div style={{ height: "100vh", width: "100%" }}>
         <h1>検索結果</h1>
-        {location && <MapComponent location={location} places={places} />}
+        {location && <MapContainer location={location} places={places} />}
       </div>
     </>
   );

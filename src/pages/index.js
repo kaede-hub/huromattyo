@@ -30,7 +30,7 @@ const IndexPage = () => {
       </Box>
       <Flex justifyContent="center">
         <Button
-          onClick={searchNearbyPlaces}
+          onClick={() => router.push("/results")}
           fontWeight="bold"
           borderRadius="50px"
           px={20}
