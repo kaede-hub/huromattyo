@@ -1,7 +1,7 @@
 // pages/api/search.js
 
-import { getNearbyPlaces } from "../../lib/google";
-import firebase from "../../lib/firebase";
+import { getNearbyPlaces } from "../../../lib/google";
+import firebase from "../../../lib/firebase";
 
 export default async function handler(req, res) {
   const { lat, lng, radius, type } = req.query;
