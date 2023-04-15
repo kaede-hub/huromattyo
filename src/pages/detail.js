@@ -1,5 +1,6 @@
 import Header from '@/components/Header'
 import React from 'react'
+import { Flex, Button, Box, Text } from "@chakra-ui/react";
 
 function detail() {
   return (
@@ -13,7 +14,7 @@ function detail() {
           textAlign={"center"}>
           店舗詳細
         </Text>
-        {location && <MapContainer location={location} places={places} />}
+        
       </Box>
 
       <Flex
