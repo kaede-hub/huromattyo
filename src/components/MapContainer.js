@@ -44,7 +44,7 @@ const MapContainer = ({ places }) => {
 
   return (
     <LoadScript
-      googleMapsApiKey="AIzaSyBrTOdd5nn6gYQ5UL9ODhRDjnhZlOyuVIA"
+      googleMapsApiKey="AIzaSyAcJeXA_o3zdFSpU0MogwbGB6QgvdHhSSc"
     >
       <GoogleMap
         onLoad={onLoad}

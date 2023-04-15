@@ -3,6 +3,15 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import MapContainer from "@/components/MapContainer";
 import { Flex, Button, Box, Text } from "@chakra-ui/react";
+import { googleMapsApiKey } from "../../lib/config";
+
+const getNearbyPlaces = async (lat, lng, radius) => {
+  const response = await fetch(
+    `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lng}&radius=${radius}&types=${types}&key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}`
+  );
+  return response;
+};
+
 
 const ResultsPage = () => {
   const router = useRouter();
@@ -19,11 +28,10 @@ const ResultsPage = () => {
   useEffect(() => {
     const fetchResults = async () => {
       if (lat && lng) {
-        const response = await fetch(
-          `/api/search?lat=${lat}&lng=${lng}&radius=1500&type=gym,sauna`
-        );
+        const response = await getNearbyPlaces(lat, lng, 1500, "gym,sauna");
         const data = await response.json();
-        setPlaces(data);
+        console.log(data);
+        setPlaces(data.results);
       }
     };
     fetchResults();

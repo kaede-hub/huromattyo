@@ -1,5 +1,5 @@
 import { getNearbyPlaces } from "../../../lib/google";
-import { addPlace } from "../../../lib/firebase";
+import { addPlace } from "../../../lib/config";
 
 export default async function handler(req, res) {
   const { lat, lng, radius, type } = req.query;
