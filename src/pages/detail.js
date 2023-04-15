@@ -24,7 +24,7 @@ function detail() {
         padding="20px"
       >
         <Button
-          onClick={() => router.push("/")}
+          onClick={() => router.push("/result")}
           fontWeight="bold"
           borderRadius="50px"
           px={20}

@@ -7,7 +7,7 @@ import { googleMapsApiKey } from "../../lib/config";
 
 const getNearbyPlaces = async (lat, lng, radius) => {
   const response = await fetch(
-    `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lng}&radius=${radius}&types=${types}&key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}`
+    `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lng}&radius=${radius}&types=${types}&key=${process.env.NEXT_PUBLIC_PLACES_API_KEY}`
   );
   return response;
 };

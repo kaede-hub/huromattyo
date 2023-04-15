@@ -3,8 +3,6 @@ import React from 'react'
 import { FaEnvelope } from 'react-icons/fa';
 
 
-
-
 function Header() {
   return (
     <Box as="header" bg="#38B6FF" height="100px" margin="0" padding="0">
